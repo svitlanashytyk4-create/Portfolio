@@ -1,0 +1,52 @@
+:root {
+  /* Colors from the Figma styles */
+  --color-text: #30382f; /* кнопки, заголовки */
+  --color-heading: #2d402a; /* заголовок */
+  --color-accent: #cb9c60; /* лінії, рукописний текст */
+  --color-bg: #f5f0e9; /* фон */
+  --color-surface: #e6e6e0; /* додаткові блоки */
+  --color-card: #858f79; /* картки, плашки */
+  --color-decor: #d8c9b8; /* декоративні елементи */
+  --color-button: #484b3a;
+
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-script: var(--font-allura), "Allura", cursive;
+
+  --page-max: 1349px;
+  --page-gutter: 43px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --page-gutter: 16px;
+  }
+}
