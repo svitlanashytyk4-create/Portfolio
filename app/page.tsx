@@ -26,7 +26,7 @@ export default function Home() {
         <img className={styles.headerLine} src="/images/line-nav-left.svg" alt="" width={168} height={1} />
         <nav className={styles.nav} aria-label="Main">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href}>
+            <a key={item.href} href={item.href} data-label={item.label}>
               {item.label}
             </a>
           ))}
